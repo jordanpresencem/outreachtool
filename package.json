@@ -1,0 +1,23 @@
+{
+  "name": "outreachtool",
+  "version": "1.0.0",
+  "description": "OnlyFinder + Airtable outreach tooling",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "scrape:demo": "npm run build && node dist/jobs/scrapeDemo.js",
+    "sync:demo": "ts-node src/jobs/syncDemoToAirtable.ts",
+    "scrape:http": "ts-node src/jobs/scrapeHttp.ts",
+    "test:scrape": "ts-node src/testScrape.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.3"
+  }
+}
